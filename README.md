@@ -3,7 +3,7 @@
 Write each issue in Markdown, run `quarto render`, and upload the HTML file to
 your mailing platform. The output is a 600px, table-based email with every
 style inlined, so it holds up in Outlook, Gmail and Apple Mail and stacks to a
-single column on phones. Nothing needs installing beyond Quarto 1.4+.
+single column on phones. Nothing needs installing beyond [Quarto 1.4+](https://quarto.org/docs/get-started/).
 
 ## Folder layout
 
