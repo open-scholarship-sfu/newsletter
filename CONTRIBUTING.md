@@ -60,10 +60,40 @@ quarto render issues/2026-12-december.qmd
   `issues/_starter.qmd` on a branch such as `issue/2026-12-december`. It
   also lists open news submissions. Write the issue on that branch and mark
   the pull request **Ready for review** when it's done.
-- To create a file yourself (for example, a special issue), run
-  `quarto run scripts/new-issue.ts 2026-12`, which sets the date for you.
+- To start an issue before the automation does (for example, next month's
+  issue early), see
+  [Creating an issue file yourself](#creating-an-issue-file-yourself).
 - Files whose names start with `_` are not rendered. Use that for drafts or
   examples you want to keep in the repository.
+
+### Creating an issue file yourself
+
+The monthly automation runs the same script you can run yourself. Use it to
+start an issue early, or if the automation didn't run:
+
+1. Create a branch named after the issue:
+
+   ```bash
+   git switch main && git pull
+   git switch -c issue/2027-01-january
+   ```
+
+2. Run the script with the month, as `YYYY-MM`:
+
+   ```bash
+   quarto run scripts/new-issue.ts 2027-01
+   ```
+
+   It creates `issues/2027-01-january.qmd` from the starter, with the date set
+   to the first of the month (change it to the send date). Without a month,
+   it creates this month's file. If the file already exists, it changes
+   nothing.
+
+3. Commit the file, push the branch, and open a **draft** pull request.
+
+The script makes one file per month. For an extra issue in a month that
+already has one, copy `issues/_starter.qmd` by hand and give it a distinct
+name, such as `issues/2027-01-special.qmd`.
 
 ### Front matter
 
