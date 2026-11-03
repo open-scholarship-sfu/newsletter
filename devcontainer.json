@@ -1,0 +1,18 @@
+{
+  // Opens this repository in GitHub Codespaces (or VS Code Dev Containers)
+  // with Quarto already installed, so contributors can write, preview and
+  // render issues in the browser without installing anything.
+  "name": "Open Scholarship newsletter",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["quarto.quarto"]
+    }
+  },
+  "postCreateCommand": "quarto --version"
+}
