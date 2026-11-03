@@ -294,8 +294,6 @@ submissions. If the file or branch already exists, it does nothing.
 - **Scheduled runs pause** in public repositories after 60 days without
   activity. If GitHub disables the workflow, re-enable it from the
   **Actions** tab.
-- **The issue number** is one more than the highest `issue:` in existing
-  issue files, so keep issue numbers correct in every file.
 
 The same script works locally: `quarto run scripts/new-issue.ts 2027-01`.
 
