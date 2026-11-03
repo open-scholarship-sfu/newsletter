@@ -1,6 +1,6 @@
 # Open Scholarship News
 
-The Open Scholarship Initiative at SFU encourages researchers to share their
+The [Open Scholarship Initiative at SFU](https://www.sfu.ca/research/research-impact/performance-excellence/open-science.html) encourages researchers to share their
 work openly: to make it transparent, reproducible and reusable. This
 repository applies the same principles to our own newsletter. Every issue is
 written in plain text, rendered with open-source tools, and kept here with its
