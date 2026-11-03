@@ -1,0 +1,83 @@
+name: Share news for the newsletter
+description: Suggest an event, story, opportunity or resource for an upcoming Open Scholarship newsletter.
+title: "[News] "
+labels: ["news"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing! We'll consider your item for an upcoming issue and may edit it for length and style.
+
+        **Everything you submit here is public**, so only include information and images that can be shared openly.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of item is this?
+      options:
+        - Event or workshop
+        - Story, project or achievement
+        - Opportunity, funding call or deadline
+        - Resource or tool
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: headline
+    attributes:
+      label: Title
+      description: The event name, or a short headline for the item.
+      placeholder: "Creative Knowledge Mobilization Workshop: Podcasting"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A few sentences on what it is and who it's for. Write it as you'd like readers to see it.
+    validations:
+      required: true
+  - type: textarea
+    id: when-where
+    attributes:
+      label: Date, time and place
+      description: For events and deadlines. Include the time zone or "online" where it helps.
+      placeholder: |
+        November 10, 2026, 10:00 a.m. to 12:00 p.m.
+        SFU Harbour Centre, Room HC 2960
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: Registration page, website or article. Put each link on its own line.
+      placeholder: https://...
+  - type: textarea
+    id: images
+    attributes:
+      label: Images
+      description: |
+        Drag and drop any images here, such as an event banner. We'll use them exactly as you send them.
+        If an image is too large to attach, paste a link to download it instead.
+  - type: input
+    id: image-credit
+    attributes:
+      label: Image credit
+      description: Who made or owns the images, if they should be credited.
+  - type: input
+    id: when-to-publish
+    attributes:
+      label: Which issue should it go in?
+      description: Tell us the latest month in which the item would still be useful.
+      placeholder: "December 2026, or before November 10"
+  - type: input
+    id: contact
+    attributes:
+      label: Your name and affiliation
+      description: Optional. Helps us follow up with questions.
+      placeholder: "Jane Doe, SFU Library"
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Permission
+      options:
+        - label: I have permission to share this text and these images publicly, and for the Open Scholarship team to publish them in the newsletter.
+          required: true
