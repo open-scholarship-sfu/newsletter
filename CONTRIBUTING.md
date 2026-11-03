@@ -12,13 +12,21 @@ without discussing it first (see [Changing the template](#changing-the-template)
 
 ## Before you start
 
-1. Install [Quarto 1.4 or later](https://quarto.org/docs/get-started/).
+1. Install [Quarto 1.4 or later](https://quarto.org/docs/get-started/), or
+   skip installing anything by opening the repository in GitHub Codespaces
+   (**Code** → **Codespaces** → **Create codespace on main**), which comes
+   with Quarto set up.
 2. Clone the repository.
-3. Create a branch for your work, named after the issue:
+3. Work on a branch named after the newsletter issue. For monthly issues the
+   branch already exists (see [Files and names](#files-and-names)):
 
    ```bash
-   git switch -c issue/2026-12-december
+   git fetch
+   git switch issue/2026-12-december
    ```
+
+   For anything else, create your own, such as
+   `git switch -c docs/fix-readme-typo`.
 
 Please don't commit directly to `main`.
 
@@ -47,8 +55,14 @@ quarto render issues/2026-12-december.qmd
 
 ### Files and names
 
-- Copy `issues/_starter.qmd` to `issues/YYYY-MM-month.qmd`, for example
-  `issues/2026-12-december.qmd`.
+- On the 1st of each month, a draft pull request is opened automatically
+  with that month's file, `issues/YYYY-MM-month.qmd`, created from
+  `issues/_starter.qmd` on a branch such as `issue/2026-12-december`. It
+  also lists open news submissions. Write the issue on that branch and mark
+  the pull request **Ready for review** when it's done.
+- To create a file yourself (for example, a special issue), run
+  `quarto run scripts/new-issue.ts 2026-12`, which sets the date and the next
+  issue number for you.
 - Files whose names start with `_` are not rendered. Use that for drafts or
   examples you want to keep in the repository.
 
@@ -120,8 +134,10 @@ file name as in Campaigner.
    the output for warnings or errors.
 3. Check that every image appears, and click every link.
 4. Open `_output/issues/2026-12-december.html` in a text editor, copy
-   everything, paste it into Campaigner's HTML block, and send yourself a
-   test. Check it on a computer and on a phone.
+   everything, paste it into Campaigner's HTML block, and send a test email
+   to yourself **and your reviewer**. Check it on a computer and on a phone.
+   Do this after your last commit: if you change anything afterwards,
+   send a new test.
 
 ## Committing
 
