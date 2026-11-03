@@ -1,0 +1,83 @@
+# On the first day of each month, creates the file for that month's
+# newsletter issue on its own branch and opens a draft pull request for it.
+# Can also be run by hand: Actions > Start the monthly newsletter issue > Run workflow.
+#
+# Needs: Settings > Actions > General > Workflow permissions >
+#        "Allow GitHub Actions to create and approve pull requests".
+
+name: Start the monthly newsletter issue
+
+on:
+  schedule:
+    - cron: "0 15 1 * *"   # 15:00 UTC on the 1st: 7 a.m. PST / 8 a.m. PDT
+  workflow_dispatch:
+    inputs:
+      month:
+        description: "Month to create, as YYYY-MM (leave empty for this month)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: read
+
+jobs:
+  new-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Create the issue file
+        id: make
+        env:
+          MONTH_INPUT: ${{ inputs.month }}
+        run: quarto run scripts/new-issue.ts $MONTH_INPUT
+
+      - name: Open a draft pull request
+        if: steps.make.outputs.created == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FILE: ${{ steps.make.outputs.path }}
+          MONTH: ${{ steps.make.outputs.month }}
+        run: |
+          name="$(basename "$FILE" .qmd)"
+          branch="issue/$name"
+          if git ls-remote --exit-code --heads origin "$branch" > /dev/null; then
+            echo "Branch $branch already exists; not opening another pull request."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add "$FILE"
+          git commit -m "Start the $MONTH newsletter issue"
+          git push origin "$branch"
+
+          news="$(gh issue list --label news --state open --limit 100 \
+            --json number,title --template '{{range .}}- [ ] #{{.number}} {{.title}}{{"\n"}}{{end}}')"
+          [ -z "$news" ] && news="_No open news submissions right now._"
+
+          {
+            echo "This draft pull request was opened automatically for the **$MONTH** newsletter issue."
+            echo
+            echo "**File:** \`$FILE\` (copied from \`issues/_starter.qmd\`)"
+            echo
+            echo "## Next steps"
+            echo
+            echo "1. Check out this branch: \`git fetch && git switch $branch\`"
+            echo "2. Write the issue, then render only this file: \`quarto render $FILE\`"
+            echo "3. Commit the issue and its output, and mark this pull request **Ready for review**."
+            echo
+            echo "See [CONTRIBUTING.md]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/main/CONTRIBUTING.md) for the full process."
+            echo
+            echo "## Open news submissions"
+            echo
+            echo "$news"
+          } > body.md
+
+          gh pr create --draft --base main --head "$branch" \
+            --title "Newsletter: $MONTH issue" --body-file body.md
