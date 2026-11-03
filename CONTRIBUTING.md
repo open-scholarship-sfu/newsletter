@@ -61,8 +61,7 @@ quarto render issues/2026-12-december.qmd
   also lists open news submissions. Write the issue on that branch and mark
   the pull request **Ready for review** when it's done.
 - To create a file yourself (for example, a special issue), run
-  `quarto run scripts/new-issue.ts 2026-12`, which sets the date and the next
-  issue number for you.
+  `quarto run scripts/new-issue.ts 2026-12`, which sets the date for you.
 - Files whose names start with `_` are not rendered. Use that for drafts or
   examples you want to keep in the repository.
 
@@ -74,7 +73,7 @@ Fill in every field from the starter:
 |---|---|
 | `title` | The headline shown under the masthead |
 | `subtitle` | One sentence on what's inside |
-| `issue` | Issue number |
+| `issue` | Issue number (optional; leave it out to show only the month) |
 | `date` | Publication date as `YYYY-MM-DD`; shown as "Month Year" |
 | `preheader` | The preview text shown in inboxes, around 90 characters, describing this issue |
 
