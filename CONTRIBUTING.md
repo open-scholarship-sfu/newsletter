@@ -5,7 +5,8 @@ and the source of every issue, written in Markdown and rendered with Quarto
 into the HTML we paste into Campaigner.
 
 Most contributions are **writing or editing an issue** in `issues/`, which
-only needs Markdown. The template itself (`_quarto.yml`, `_extensions/` and
+only needs Markdown. To suggest news for the newsletter without writing an
+issue yourself, see [Sharing news](#sharing-news-questions-and-problems). The template itself (`_quarto.yml`, `_extensions/` and
 `scripts/`) is working and shared by every issue, so please don't change it
 without discussing it first (see [Changing the template](#changing-the-template)).
 
@@ -173,11 +174,14 @@ This repository is shared under the
 contribution is shared under the same licence. Only contribute text and
 images you have permission to share.
 
-## Questions and problems
+## Sharing news, questions and problems
 
-- **Something isn't working?** Open a GitHub issue using the "Report a
-  problem" form.
-- **Ideas for changing the template?** Use the "Propose a template change"
-  form.
-- **General questions, or news to feature in the newsletter?** Email
-  [open_scholarship@sfu.ca](mailto:open_scholarship@sfu.ca).
+Open a GitHub issue and choose the form that fits:
+
+- **News to feature in the newsletter?** Use "Share news for the
+  newsletter". Submissions are public, so only share what can be published.
+- **Something isn't working?** Use "Report a problem".
+- **Ideas for changing the template?** Use "Propose a template change".
+
+For anything else, email
+[open_scholarship@sfu.ca](mailto:open_scholarship@sfu.ca).
