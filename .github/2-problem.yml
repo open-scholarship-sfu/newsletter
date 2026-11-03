@@ -1,0 +1,57 @@
+name: Report a problem
+description: Something isn't working, such as a render error, missing images, or the email looking wrong in Campaigner or on a phone.
+title: "[Problem] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! The more detail you give, the faster this can be fixed.
+        Please don't include subscribers' personal information: this repository is public.
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where does the problem appear?
+      options:
+        - When rendering with Quarto (error or warning)
+        - In the Quarto preview
+        - In Campaigner
+        - In a test email on a computer
+        - In a test email on a phone
+        - Somewhere else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the problem, and what you expected instead. Screenshots are very welcome.
+    validations:
+      required: true
+  - type: input
+    id: issue-file
+    attributes:
+      label: Which newsletter issue file?
+      placeholder: issues/2026-12-december.qmd
+  - type: input
+    id: command
+    attributes:
+      label: Command you ran
+      placeholder: quarto render issues/2026-12-december.qmd
+  - type: textarea
+    id: output
+    attributes:
+      label: Error message or render output
+      description: Paste any error or warning text. It will be formatted as code automatically.
+      render: shell
+  - type: input
+    id: quarto-version
+    attributes:
+      label: Quarto version
+      description: Run `quarto --version` and paste the result.
+      placeholder: "1.7.32"
+  - type: input
+    id: email-client
+    attributes:
+      label: Email app, if the problem is in a test email
+      placeholder: e.g. Outlook on Windows, Gmail in a browser, Mail on iPhone

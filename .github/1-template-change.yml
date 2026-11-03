@@ -1,0 +1,38 @@
+name: Propose a template change
+description: Suggest a change to how every newsletter looks or renders. Please open one of these before editing _quarto.yml, _extensions/ or scripts/.
+title: "[Template] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The template is shared by every newsletter issue, so changes are discussed here first.
+        See [CONTRIBUTING.md](https://github.com/open-scholarship-sfu/newsletter/blob/main/CONTRIBUTING.md#changing-the-template) for how agreed changes are made.
+  - type: textarea
+    id: change
+    attributes:
+      label: What would you like to change?
+      description: Describe the change. A sketch, screenshot or example from another newsletter helps.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: What problem does it solve, or what will it make easier?
+    validations:
+      required: true
+  - type: checkboxes
+    id: files
+    attributes:
+      label: Which parts would it affect, if you know?
+      options:
+        - label: "`_quarto.yml` (settings: colours, fonts, footer, image address)"
+        - label: "`_extensions/osnews/` (layout and components)"
+        - label: "`scripts/` (post-render processing)"
+        - label: "README or other documentation"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: For example, whether you'd like to make the change yourself.
