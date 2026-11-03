@@ -17,7 +17,12 @@ a single column on phones. Nothing needs installing beyond
 [Quarto 1.4 or later](https://quarto.org/docs/get-started/).
 
 Want to help, or share news for an upcoming issue? See
-[CONTRIBUTING.md](CONTRIBUTING.md).
+[CONTRIBUTING.md](CONTRIBUTING.md). Maintainers' processes are in
+[MAINTAINERS.md](MAINTAINERS.md).
+
+**No installation needed:** click **Code** → **Codespaces** → **Create
+codespace on main** to open the repository in your browser with Quarto
+already set up.
 
 ## Folder layout
 
@@ -25,17 +30,21 @@ Want to help, or share news for an upcoming issue? See
 _quarto.yml                 newsletter-wide settings (name, colours, footer, image address)
 _extensions/osnews/         the template: shell HTML and Lua filter
 scripts/fragment.ts         tidies the output after each render (runs automatically)
+scripts/new-issue.ts        creates a new month's issue file from the starter
 issues/_starter.qmd         blank issue to copy (files starting with _ aren't rendered)
 issues/YYYY-MM-month.qmd    one file per issue
 issues/images/              placeholder images used by the starter, and archive copies
 _output/issues/*.html       rendered emails, committed as the record of what was sent
-.github/                    issue forms and the pull request template
+.github/                    issue forms, pull request template, code owners, monthly workflow
+.devcontainer/              Codespaces setup with Quarto installed
 ```
 
 ## Making a new issue
 
-1. Copy `issues/_starter.qmd` to `issues/2026-12-december.qmd` and fill it
-   in.
+1. On the 1st of each month, a draft pull request is opened automatically
+   with that month's file, such as `issues/2026-12-december.qmd`, copied
+   from the starter. Switch to its branch and fill it in. (To create one
+   yourself: `quarto run scripts/new-issue.ts 2026-12`.)
 2. Upload the issue's images to Campaigner's image library (see
    [Images](#images)).
 3. Preview while writing:
@@ -186,4 +195,11 @@ please propose them first using the "Propose a template change" issue form
 
 ## Licence
 
-Shared under the [CC BY 4.0 licence](LICENSE).
+Except where noted, the content of this repository, including the template
+and the text of each newsletter, is shared under the
+[CC BY 4.0 licence](LICENSE). You're welcome to reuse and adapt it, with
+credit to the SFU Open Scholarship Initiative.
+
+Images, logos, event posters and quoted material belong to their respective
+owners and are not covered by this licence. Ask the owner for permission
+before reusing them.
