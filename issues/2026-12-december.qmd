@@ -1,0 +1,68 @@
+---
+title: "Issue headline"
+subtitle: "One sentence on what's inside."
+date: 2026-12-01  # change to the send date
+preheader: "Inbox preview text, about 90 characters."
+---
+
+Hi everyone,
+
+Short intro note.
+
+Sign-off
+
+## Featured story
+
+::: {.feature image="images/feature.png" alt="Describe the image" link="https://..."}
+### Story title
+
+Two or three sentences.
+
+[Read the story](https://...){.button}
+:::
+
+## Upcoming events {.tinted}
+
+::: {.event date="2026-12-10" time="10:00 to 11:00 a.m." place="Online"}
+### Event title
+
+One or two sentences.
+
+[Register](https://...){.button .secondary}
+:::
+
+## Opportunities
+
+::: highlight
+#### Deadline or call
+
+Details. **Apply by date.**
+:::
+
+::: two-col
+::: {.col image="images/card-1.png" alt="..." link="https://..."}
+#### Item one
+
+Short description. [Link](https://...)
+:::
+
+::: {.col image="images/card-2.png" alt="..." link="https://..."}
+#### Item two
+
+Short description. [Link](https://...)
+:::
+:::
+
+## Community spotlight
+
+::: {.spotlight image="images/spotlight.png" alt="Portrait of ..."}
+#### Name, department
+
+> "Quote."
+
+A sentence about their work.
+:::
+
+## Resources
+
+- [Resource](https://...): what it's for
