@@ -1,0 +1,104 @@
+---
+title: "It's the most wonderful time of the year! 🎄"
+subtitle: "Funding call for open hardware, end-of-year reflections, and New Year resolutions."
+issue: 15
+date: 2026-12-04
+preheader: "Data workshops, new Open Scholarship Champions, and a preprint review club you can join."
+---
+
+Hello, community!
+
+December is a good month to reflect on what we did, what are our plans for next
+year, and to pick the real physical paper agenda you're going to use starting
+next month... Isn't it? This month we're featuring stories about new funding
+opportunities, new workshops, our end-of-year reflection and our wishes for 2027.
+
+As always, if you have news, a project, or a question you'd like us to
+feature, reply to this email or write to
+[open_scholarship@sfu.ca](mailto:open_scholarship@sfu.ca).
+
+Gracielle and the Open Scholarship team
+
+## Featured story
+
+::: {.feature image="images/feature.png" alt="Researchers reviewing a shared dataset together" link="https://www.sfu.ca/research/researcher-resources/further-my-research/knowledge-mobilization-hub/stories/2025/a-new-open-scholarship-movement.html"}
+### A new open scholarship movement at SFU
+
+SFU is the first university in Canada to adopt open scholarship for the whole
+institution. Our Knowledge Mobilization Hub looks at what that commitment
+means in practice, from open access publishing to community-engaged research,
+and what's coming next.
+
+[Read the story](https://www.sfu.ca/research/researcher-resources/further-my-research/knowledge-mobilization-hub/stories/2025/a-new-open-scholarship-movement.html){.button}
+:::
+
+## Upcoming events {.tinted}
+
+::: {.event date="2026-11-18" time="10:00 to 11:30 a.m." place="Online (Zoom)"}
+### Preparing your data for sharing
+
+A practical session on file formats, documentation and choosing a repository.
+Bring a dataset you're working on.
+
+[Register](https://www.sfu.ca/research){.button .secondary}
+:::
+
+::: {.event date="2026-11-25" time="12:00 to 1:00 p.m." place="Burnaby campus, W.A.C. Bennett Library"}
+### Preprint review club
+
+Read and discuss a recent preprint together, then post a community review on
+PREreview. No experience needed.
+
+[Join the club](https://prereview.org/clubs/osi-sfu){.button .secondary}
+:::
+
+## Opportunities
+
+::: highlight
+#### Applications open: Open Scholarship Champions
+
+Champions lead open projects in their units and get training, mentorship and
+a small project budget. Faculty, staff and students are all welcome.
+**Apply by December 5.**
+:::
+
+::: two-col
+::: {.col image="images/card-1.png" alt="Starter plan checklist"}
+#### Open Scholarship Starter Plan
+
+A step-by-step plan for making your next project more open.
+
+[Get the plan](https://www.sfu.ca/research/researcher-resources/further-my-research/open-scholarship/os-starter-plan.html)
+:::
+
+::: {.col image="images/card-2.png" alt="Calendar for booking a meeting"}
+#### Book office hours
+
+Talk through your project with our community manager, one to one.
+
+[Book a time](https://cal.com/graciellehigino/sfu-os-office-hour)
+:::
+:::
+
+## Community spotlight
+
+::: {.spotlight image="images/spotlight.png" alt="Portrait of Dr. Alex Rivera"}
+#### Dr. Alex Rivera, Faculty of Environment
+
+> "Publishing our code alongside the paper meant three other labs could
+> reuse our model within a month."
+
+Alex's team released their full analysis pipeline under an open licence this
+fall. [Read how they did it](https://www.sfu.ca/research).
+:::
+
+---
+
+Know someone doing great open work? [Nominate them for a spotlight](mailto:open_scholarship@sfu.ca).
+
+## Resources
+
+- [Open Access policy](https://www.lib.sfu.ca/help/publish/scholarly-publishing/open-access/open-access-policy): what it covers and how to comply
+- [Research data management](https://www.lib.sfu.ca/help/publish/research-data-management): plans, storage and repositories
+- [Open Educational Resources](https://www.lib.sfu.ca/help/research-assistance/format-type/oer/issues-open-educational-resources): find and create open course materials
+- [Open Scholarship Principles](https://www.sfu.ca/research/research-impact/performance-excellence/open-science/open-science-principles.html)

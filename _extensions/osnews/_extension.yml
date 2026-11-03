@@ -1,0 +1,19 @@
+title: Open Scholarship Newsletter
+author: SFU Open Scholarship
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    html:
+      template: template.html
+      filters:
+        - path: newsletter.lua
+          at: post-render
+      minimal: true
+      section-divs: false
+      anchor-sections: false
+      embed-resources: false
+      email-obfuscation: none
+      html-math-method: plain
+      date-format: "MMMM YYYY"
+      lang: en

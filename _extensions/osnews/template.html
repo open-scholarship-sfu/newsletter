@@ -1,0 +1,71 @@
+$if(nl-fragment)$
+<div style="max-width:600px; margin:0 auto;">
+$else$
+<!DOCTYPE html>
+<html lang="$lang$" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>$pagetitle$</title>
+<!--[if mso]>
+<noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+<style>table, td, p, a, h1, h2, h3, li { mso-line-height-rule: exactly; }</style>
+<![endif]-->
+$endif$
+<style>
+  /* All visual styling is inlined by newsletter.lua. This block only holds
+     client resets and the mobile layout, which cannot be inlined. */
+  body { margin: 0 !important; padding: 0 !important; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+  table, td { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+  a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; }
+  @media screen and (max-width: 620px) {
+    .nl-container { width: 100% !important; }
+    .nl-outer { padding: 0 !important; }
+    .nl-pad { padding-left: 22px !important; padding-right: 22px !important; }
+    .nl-wordmark { font-size: 32px !important; line-height: 38px !important; }
+    .nl-stack { display: block !important; width: 100% !important; box-sizing: border-box; }
+    .nl-col-l, .nl-col-r { padding-left: 0 !important; padding-right: 0 !important; }
+    .nl-col-l { padding-bottom: 12px !important; }
+    .nl-meta-r { text-align: left !important; padding-top: 2px !important; }
+    .nl-spot-img { padding: 0 0 14px 0 !important; }
+    .nl-fluid { width: 100% !important; max-width: 100% !important; height: auto !important; }
+  }
+</style>
+$if(nl-fragment)$
+$else$
+</head>
+<body style="margin:0; padding:0; background-color:$nl-page$;">
+$endif$
+$if(preheader)$
+<div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">$preheader$&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;</div>
+$endif$
+$if(nl-fragment)$
+<table role="presentation" class="nl-container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px; margin:0 auto; background-color:#ffffff;">
+$body$
+</table>
+$if(nl-below)$
+$nl-below$
+$endif$
+</div>
+$else$
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:$nl-page$;">
+<tr><td align="center" class="nl-outer" style="padding:28px 12px;">
+<!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table role="presentation" class="nl-container" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background-color:#ffffff;">
+$body$
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+$if(nl-below)$
+$nl-below$
+$endif$
+</td></tr>
+</table>
+</body>
+</html>
+$endif$

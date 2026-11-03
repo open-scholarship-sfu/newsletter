@@ -1,0 +1,190 @@
+---
+title: "Podcasts, open education and orca calls"
+subtitle: "Creative knowledge mobilization workshops, a celebration of open education, and a new round of Open Scholarship Champions."
+date: 2026-11-02
+preheader: "Podcasting workshops, an open education celebration, Champions applications and this month’s library workshops."
+---
+
+Hello, community! It’s officially sweater weather! 🍂
+
+This is your monthly update about the
+[Open Scholarship Initiative](https://www.sfu.ca/research/performance-excellence/open-science),
+with a summary of our collective progress towards a more open university and
+a glimpse of what lies ahead.
+
+On this issue we're featuring a lot of workshop opportunities and the Open Education celebration
+event. We hope to see you in some (or all!) of these events!
+
+As always, if you have news, a project, or a question you'd like us to
+feature, reply to this email or write to
+[open_scholarship@sfu.ca](mailto:open_scholarship@sfu.ca).
+
+::: highlight
+#### Open access art tip
+
+Look for a good public domain movie to watch under the blanket! The
+[Public Domain Movie](https://publicdomainmovie.net/) website has a large
+catalogue, including
+[*Good Night, Nurse!*](https://publicdomainmovie.net/movie/good-night-nurse),
+[*The Rink*](https://publicdomainmovie.net/movie/charlie-chaplins-the-rink)
+and many more.
+:::
+
+## Open Scholarship news at SFU
+
+### Creative Knowledge Mobilization Workshop Series
+
+::: {.feature image="os_newsletter-nov2026-km_workshops.jpg" alt="Creative Knowledge Mobilization Workshop Series, Workshop 2: Podcasting. November 10, 2026, 10:00 to 12:00 and 1:00 to 3:30 p.m., Unnamed PubLab (Room HC 2960), SFU Harbour Centre, 515 West Hastings St. Instructors: Dr. Hannah McGregor and Garth Mullins." link="https://www.eventbrite.ca/e/creative-knowledge-mobilization-workshop-series-podcasting-tickets-2002826996461?aff=oddtdtcreator"}
+
+
+The SFU Community-Engaged Research Initiative, the SFU Knowledge Mobilization
+Hub and the UBC Public Humanities Hub are hosting a series of workshops
+exploring creative approaches to knowledge mobilization. Designed for
+researchers, graduate students, practitioners and community partners, the
+series introduces practical skills for translating research into engaging,
+accessible and impactful public-facing formats. On November 10, the theme is
+podcasting!
+
+::: {.event date="2026-11-10" time="10:00 a.m. to 12:00 p.m." place="SFU Harbour Centre, Unnamed PubLab (Room HC 2960)"}
+#### Podcasting as Movement Journalism
+
+Activist, author and podcaster Garth Mullins will discuss his work on the
+podcast *Crackdown* and introduce the idea of “movement journalism.”
+:::
+
+::: {.event date="2026-11-10" time="1:00 to 3:30 p.m." place="SFU Harbour Centre, Unnamed PubLab (Room HC 2960)"}
+#### How to Create a Research Podcast
+
+Dr. Hannah McGregor will lead a practical, hands-on session exploring how to
+develop a podcast grounded in research and community engagement.
+:::
+
+We absolutely LOVE to see these initiatives integrating the open movement at
+SFU and strongly encourage you to sign up! Plus, lunch will be provided!
+
+[Register here](https://www.eventbrite.ca/e/creative-knowledge-mobilization-workshop-series-podcasting-tickets-2002826996461?aff=oddtdtcreator){.button}
+:::
+
+### Celebrating Open Education at SFU
+
+::: {.feature image="sfu_oe-cop.jpg" alt="SFU Open Education Community of Practice" link="https://events.sfu.ca/event/50485-sfu-open-education-community-celebration"}
+
+Open educational resources (OER) and practices (OEP) make learning more
+affordable, accessible and open for SFU students. On **November 10, from
+12:30 to 2:00 p.m.**, join us for a celebration recognizing SFU instructors
+and practitioners who are using, developing and supporting OER and OEP for
+teaching and learning!
+
+Whether you’re already using OER in your teaching, supporting open education
+in your work, or curious about getting started, you’re warmly invited to
+celebrate SFU’s growing open education community.
+
+The event is hosted by the Open Education Community of Practice and
+[Open Scholarship Framework](https://www.sfu.ca/research/research-impact/performance-excellence/open-science.html)
+teams here at SFU. Coffee and light refreshments will be provided.
+
+[Learn more and register](https://events.sfu.ca/event/50485-sfu-open-education-community-celebration){.button}
+
+Interested in staying involved with the Open Education Community of Practice?
+[Join our Canvas space](https://canvas.sfu.ca/enroll/3H3PHW)!
+:::
+
+::: highlight
+### Open Scholarship Champions: new round open!
+
+We’re still accepting applications for the
+[Center for Open Science’s self-paced courses](https://centerforopenscience.catalog.instructure.com/)!
+If you want to become an Open Scholarship Champion, we will offer you a full
+scholarship to complete one or more of these training courses and get a
+certificate.
+
+Grantees have until **May 1, 2027** to complete their training and until
+**August 1, 2027** to complete a project of their choice.
+
+If you’re unable or prefer not to take a COS course, you can still
+participate! Simply complete another open scholarship training and provide
+proof of completion. All participants, whichever training they choose, have
+the same August 1, 2027 deadline for their projects.
+
+[Apply for a COS seat](https://forms.cloud.microsoft/r/0yKcdeN6wZ){.button} [Register as a Champion](https://forms.cloud.microsoft/r/bSfwvHRVaR){.button .secondary}
+
+*This opportunity is recognized on the Co-Curricular Record (CCR), an
+official university document that tracks your co-curricular involvement at
+SFU. [Learn more about the Co-Curricular Record](http://www.sfu.ca/students/get-involved/recognition/co-curricular-record).*
+:::
+
+### New open killer whale sound catalogue
+
+From [SFU News](https://www.sfu.ca/sfunews/stories/2026/09/new-sound-catalogue-reveals-who-s-who-in-the-world-of-killer-wha.html):
+
+> “A new open-access catalogue of whale calls will help researchers and orca
+> enthusiasts identify distinct killer whale populations, clans and family
+> groups by their vocalizations alone. Developed at Simon Fraser University,
+> the Orca Call Catalogue serves as a field guide to killer whale calls,
+> pulling decades of recordings into a searchable online library for the
+> first time, says John Ford, scientist emeritus at Fisheries and Oceans
+> Canada.”
+
+This project shows how engaged our community is in open scholarship
+practices! Shout out to the [Research Computing Group](https://www.rcg.sfu.ca/)
+for providing the infrastructure needed for this project.
+
+If you have a project that you’d like to make open,
+[reach out to us](mailto:open_scholarship@sfu.ca) and we’ll help you figure
+out a plan to make it happen!
+
+## Library open-something workshops this month {.tinted}
+
+::: {.event date="2026-11-04" time="10:00 a.m. to 2:30 p.m." place="Burnaby, Bennett Library, Rm 7010, Research Commons"}
+#### Got Data? Use R for Data Visualization
+
+[Learn more and register](https://www.lib.sfu.ca/about/branches-depts/rc/software-data-dh/software/39901){.button .secondary}
+:::
+
+::: {.event date="2026-11-06" time="10:00 a.m. to 12:00 p.m." place="Burnaby, Bennett Library, Rm 7010, Research Commons"}
+#### A friendly introduction to map-making with QGIS
+
+[Learn more and register](https://www.lib.sfu.ca/find/other-materials/data-gis/gis/39867){.button .secondary}
+:::
+
+::: {.event date="2026-11-16" time="2:00 to 3:15 p.m." place="Online, via Zoom"}
+#### Citations Made Easy: Introduction to Zotero
+
+[Learn more and register](https://www.lib.sfu.ca/find/research-tools/39845){.button .secondary}
+:::
+
+## Resources
+
+::: two-col
+::: col
+#### Drop by to chat about open scholarship
+
+We have open office hours online every Monday (11 a.m. to 1 p.m.) and
+Wednesday (1 to 3 p.m.). Book a 30-minute chat if you have questions about
+open scholarship practices. We can connect you with the right support
+service at SFU or brainstorm solutions together.
+
+[Book a chat](https://cal.com/graciellehigino/sfu-os-office-hour){.button}
+:::
+
+::: col
+#### Our Open Scholarship calendar
+
+Did you know we have an active events calendar you can subscribe to? Find it
+on our [resources website](https://www.sfu.ca/research/researcher-resources/further-my-research/open-scholarship.html),
+[download the .ics file](https://outlook.office365.com/owa/calendar/7620b016b8f64b668f611974e0267923@sfu.ca/06170becab814a88a5b97c2fd18ddd6b12222276049475103123/calendar.ics),
+or [view it in your browser](https://outlook.office365.com/owa/calendar/7620b016b8f64b668f611974e0267923@sfu.ca/06170becab814a88a5b97c2fd18ddd6b12222276049475103123/calendar.html).
+:::
+:::
+
+## Extra tips
+
+The next **Mozilla Foundation Incubation** cohort is open for applications
+until **November 20**. Applicants are eligible to receive up to $500,000 USD
+in funding over three years. Read more:
+[Human-Scale AI: bespoke, fit-for-purpose technology designed at the scale of the problem it’s meant to solve](https://www.mozillafoundation.org/en/what-we-do/grantmaking/incubator/human-scale-ai/call-for-proposals/).
+
+---
+
+That’s it for this month! We’ll be back in December with more news and
+updates.

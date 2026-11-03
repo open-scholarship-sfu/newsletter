@@ -1,0 +1,82 @@
+project:
+  type: default
+  render:
+    - "issues/*.qmd"
+  output-dir: _output
+  post-render: scripts/fragment.ts
+  resources:
+    - "issues/images/**"
+
+format:
+  osnews-html: default
+
+# ---------------------------------------------------------------------------
+# Newsletter-wide settings. Every issue picks these up; an issue can override
+# any of them in its own front matter.
+# ---------------------------------------------------------------------------
+newsletter:
+  name: "Open Scholarship News"
+  org: "Simon Fraser University"
+
+  # Optional logo shown above the name (a light/reversed version works best
+  # on the dark masthead).
+  # logo: "https://www.sfu.ca/etc/designs/clf/clientlibs/clf4/default/img/SFU_horizontal_reversed_colour_rgb.png"
+  # logo-width: 150
+
+  # Email clients need full image URLs. Upload the issue's images to
+  # Campaigner's image library (or any web host) and put the folder URL here;
+  # relative paths like images/photo.jpg are then rewritten to
+  # <image-base-url>/images/photo.jpg. Leave empty while drafting.
+  image-base-url: "http://media.campaigner.com/media/77/770384/"
+
+  # true: output only the newsletter card, for pasting into Campaigner's
+  #       HTML block (Campaigner provides the page width and background).
+  # false: a complete standalone HTML page with its own background.
+  fragment: true
+
+  # Show the "In this issue" box after the intro.
+  in-this-issue: true
+
+  colors:
+    primary: "#26215C"          # indigo: masthead, headings, buttons, footer
+    accent: "#8FD9BF"           # mint: issue/date line in the masthead
+    link: "#3B37B0"
+    ink: "#24232E"              # body text
+    muted: "#686775"
+    tint: "#F2F1F8"             # sections marked {.tinted}
+    highlight: "#DDF3EA"        # ::: highlight boxes
+    line: "#E2E0EC"
+    page: "#ECEBF3"             # background around the email
+    on-primary: "#FFFFFF"
+    on-primary-muted: "#B9B6DC"
+
+  # Email-safe font stacks. Don't wrap names in quotes; spaces are fine.
+  fonts:
+    heading: Helvetica Neue, Helvetica, Arial, sans-serif
+    body: Helvetica Neue, Helvetica, Arial, sans-serif
+
+  footer:
+    about: "Open scholarship news, events and resources for the SFU research community."
+    email: "open_scholarship@sfu.ca"
+    website:
+      label: "sfu.ca/open-scholarship"
+      url: "https://www.sfu.ca/research/research-impact/performance-excellence/open-science.html"
+    links:
+      - label: "Resources"
+        url: "https://www.sfu.ca/research/researcher-resources/further-my-research/open-scholarship.html"
+      - label: "Principles"
+        url: "https://www.sfu.ca/research/research-impact/performance-excellence/open-science/open-science-principles.html"
+      - label: "Join the mailing list"
+        url: "https://secure.campaigner.com/CSB/Public/Form.aspx?fid=1882702&ac=gifk"
+    land-acknowledgement: >-
+      Simon Fraser University respectfully acknowledges the xʷməθkʷəy̓əm
+      (Musqueam), Sḵwx̱wú7mesh Úxwumixw (Squamish), səlilwətaɬ (Tsleil-Waututh),
+      q̓íc̓əy̓ (Katzie), kʷikʷəƛ̓əm (Kwikwetlem), Qayqayt, Kwantlen, Semiahmoo and
+      Tsawwassen peoples on whose unceded traditional territories our three
+      campuses reside.
+    # Raw HTML placed at the end of the footer, e.g. your mailing platform's
+    # unsubscribe / manage-preferences merge tags.
+    # raw-html: '<p style="margin:0; font-size:12px; color:#B7CBCF;">UNSUBSCRIBE TAG HERE</p>'
+
+  # Small text under the email card. Markdown allowed.
+  below-footer: "You're receiving this because you subscribed to Open Scholarship updates at SFU."
