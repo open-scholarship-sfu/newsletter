@@ -140,7 +140,8 @@ file name as in Campaigner.
 ## Changing the template
 
 `_quarto.yml`, `_extensions/` and `scripts/` control how every issue looks
-and renders. Please **open a GitHub issue before changing them**, describing
+and renders. Please **open a GitHub issue before changing them**, using the "Propose a
+template change" form, describing
 what you'd like to change and why.
 
 If a change is agreed:
@@ -172,7 +173,11 @@ This repository is shared under the
 contribution is shared under the same licence. Only contribute text and
 images you have permission to share.
 
-## Questions
+## Questions and problems
 
-Open a GitHub issue, or email
-[open_scholarship@sfu.ca](mailto:open_scholarship@sfu.ca).
+- **Something isn't working?** Open a GitHub issue using the "Report a
+  problem" form.
+- **Ideas for changing the template?** Use the "Propose a template change"
+  form.
+- **General questions, or news to feature in the newsletter?** Email
+  [open_scholarship@sfu.ca](mailto:open_scholarship@sfu.ca).
