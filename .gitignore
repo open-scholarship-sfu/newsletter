@@ -41,7 +41,7 @@ luac.out
 
 # Other files and folders
 ._*
-.quarto/
+/.quarto/
 
 # macOS folder metadata
 .DS_Store
