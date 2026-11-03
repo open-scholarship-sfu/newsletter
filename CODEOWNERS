@@ -1,0 +1,16 @@
+# Changes to these paths need approval from a maintainer before merging
+# (with "Require review from Code Owners" turned on in the main branch ruleset).
+# Newsletter issue files have no owner, so any reviewer can approve them.
+#
+# The team must exist in the organization and have write access to this
+# repository. To list people instead, replace the team with usernames,
+# e.g. @username1 @username2
+
+/_quarto.yml        @open-scholarship-sfu/maintainers
+/_extensions/       @open-scholarship-sfu/maintainers
+/scripts/           @open-scholarship-sfu/maintainers
+/.github/           @open-scholarship-sfu/maintainers
+/.devcontainer/     @open-scholarship-sfu/maintainers
+/LICENSE            @open-scholarship-sfu/maintainers
+/CONTRIBUTING.md    @open-scholarship-sfu/maintainers
+/MAINTAINERS.md     @open-scholarship-sfu/maintainers

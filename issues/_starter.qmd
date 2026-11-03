@@ -3,7 +3,6 @@
 # (Files starting with _ are not rendered.)
 title: "Issue headline"
 subtitle: "One sentence on what's inside."
-issue: 15
 date: 2026-12-02
 preheader: "Inbox preview text, about 90 characters."
 ---

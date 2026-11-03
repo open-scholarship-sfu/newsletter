@@ -43,4 +43,4 @@ Write "None" if you copied it as written. -->
 - [ ] The rendered output in `_output/` is committed and matches the source
 - [ ] `git status` shows no changes to published issues or their output
 - [ ] The render showed no warnings or errors
-- [ ] Test email sent through Campaigner and checked on desktop and phone
+- [ ] Test email sent through Campaigner **after my last commit**, to me and my reviewer, and checked on desktop and phone
