@@ -12,14 +12,27 @@ without discussing it first (see [Changing the template](#changing-the-template)
 
 ## Before you start
 
-1. Install [Quarto 1.4 or later](https://quarto.org/docs/get-started/), or
-   skip installing anything by opening the repository in GitHub Codespaces
-   (**Code** → **Codespaces** → **Create codespace on main**), which comes
-   with Quarto set up.
-2. Clone the repository.
-3. Work on a branch named after the newsletter issue. For monthly issues the
-   branch already exists (see [Files and names](#files-and-names)):
+Choose one of these:
 
+- **In your browser (nothing to install):** open your issue's draft pull
+  request and click **Code** → **Codespaces** → **Create codespace**. You'll
+  get the repository on the issue's branch, with Quarto set up, ready to
+  edit. For other work, open a codespace from the branch you're working on.
+- **On your computer:**
+  1. Install [Quarto 1.4 or later](https://quarto.org/docs/get-started/).
+  2. Clone the repository.
+  3. Work on a branch named after the newsletter issue. For monthly issues
+     the branch already exists (see [Files and names](#files-and-names)):
+
+     ```bash
+     git fetch
+     git switch issue/2026-12-december
+     ```
+
+     For anything else, create your own, such as
+     `git switch -c docs/fix-readme-typo`.
+
+Please don't commit directly to `main`.
    ```bash
    git fetch
    git switch issue/2026-12-december
