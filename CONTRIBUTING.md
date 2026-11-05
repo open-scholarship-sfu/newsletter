@@ -160,6 +160,11 @@ as `image-base-url` in `_quarto.yml`; don't change it.
    turned off. For posters or banners that contain text, include the key
    information from the image (event name, date, time, place).
 
+4. **Add descriptive captions and appropriate credit**. You can do that by adding the `caption` and `credit` tags to your image block. Either part can be used alone. `caption=` and `credit=` work, as alternatives to `cap=`  and `credits=`. Make sure no spaces are added around `=` and no commas are being added between attributes.
+```
+::: {.feature image="os_newsletter-nov2026-km_workshops.jpg" alt="..." cap="Participants at the workshop, November 2026" credits="Jane Doe, SFU Communications"}
+```
+
 The email doesn't need copies of the images in this repository. If you want
 to keep an archive copy, put it in `issues/images/YYYY-MM/` under the same
 file name as in Campaigner.
