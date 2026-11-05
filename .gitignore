@@ -43,5 +43,8 @@ luac.out
 ._*
 /.quarto/
 
+# Never track images folders - licensing is complicated and the volume adds up
+images/
+
 # macOS folder metadata
 .DS_Store
