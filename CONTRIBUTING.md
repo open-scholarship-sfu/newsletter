@@ -12,14 +12,27 @@ without discussing it first (see [Changing the template](#changing-the-template)
 
 ## Before you start
 
-1. Install [Quarto 1.4 or later](https://quarto.org/docs/get-started/), or
-   skip installing anything by opening the repository in GitHub Codespaces
-   (**Code** → **Codespaces** → **Create codespace on main**), which comes
-   with Quarto set up.
-2. Clone the repository.
-3. Work on a branch named after the newsletter issue. For monthly issues the
-   branch already exists (see [Files and names](#files-and-names)):
+Choose one of these:
 
+- **In your browser (nothing to install):** open your issue's draft pull
+  request and click **Code** → **Codespaces** → **Create codespace**. You'll
+  get the repository on the issue's branch, with Quarto set up, ready to
+  edit. For other work, open a codespace from the branch you're working on.
+- **On your computer:**
+  1. Install [Quarto 1.4 or later](https://quarto.org/docs/get-started/).
+  2. Clone the repository.
+  3. Work on a branch named after the newsletter issue. For monthly issues
+     the branch already exists (see [Files and names](#files-and-names)):
+
+     ```bash
+     git fetch
+     git switch issue/2026-12-december
+     ```
+
+     For anything else, create your own, such as
+     `git switch -c docs/fix-readme-typo`.
+
+Please don't commit directly to `main`.
    ```bash
    git fetch
    git switch issue/2026-12-december
@@ -146,6 +159,11 @@ as `image-base-url` in `_quarto.yml`; don't change it.
 3. **Give every image `alt` text.** Many readers see emails with images
    turned off. For posters or banners that contain text, include the key
    information from the image (event name, date, time, place).
+
+4. **Add descriptive captions and appropriate credit**. You can do that by adding the `caption` and `credit` tags to your image block. Either part can be used alone. `caption=` and `credit=` work, as alternatives to `cap=`  and `credits=`. Make sure no spaces are added around `=` and no commas are being added between attributes.
+```
+::: {.feature image="os_newsletter-nov2026-km_workshops.jpg" alt="..." cap="Participants at the workshop, November 2026" credits="Jane Doe, SFU Communications"}
+```
 
 The email doesn't need copies of the images in this repository. If you want
 to keep an archive copy, put it in `issues/images/YYYY-MM/` under the same

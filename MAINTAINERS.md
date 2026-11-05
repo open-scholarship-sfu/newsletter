@@ -15,7 +15,7 @@ issue** and **GitHub issue** to keep them apart.
 - [The monthly cycle](#the-monthly-cycle)
 - [Triaging GitHub issues](#triaging-github-issues)
 - [Reviewing pull requests](#reviewing-pull-requests)
-- [After sending: tags and releases](#after-sending-tags-and-releases)
+- [After sending](#after-sending)
 - [Monitoring stalled issues and pull requests](#monitoring-stalled-issues-and-pull-requests)
 - [Labels and milestones](#labels-and-milestones)
 - [Automation](#automation)
@@ -37,7 +37,7 @@ Maintainers:
 
 - review and merge pull requests
 - triage news submissions, problem reports and template proposals
-- send each newsletter from Campaigner and record it with a tag and release
+- send each newsletter from Campaigner
 - keep the repository settings, labels and automation working
 
 ## The monthly cycle
@@ -52,7 +52,7 @@ Maintainers:
 | Review | The reviewer checks the content, the preview and the test email they received (see [Reviewing pull requests](#reviewing-pull-requests)) | Reviewer |
 | Merge | Squash-merge the pull request into `main` | Maintainer |
 | Send | Paste the HTML **from `main`** into Campaigner and send | Maintainer |
-| After sending | Tag and release the issue, close the milestone and the featured news submissions | Maintainer |
+| After sending | Close the milestone and the featured news submissions | Maintainer |
 
 **A pull request is merged only after its test email passes.** The test
 uses the HTML from the branch's final commit. Squash-merging doesn't change
@@ -77,7 +77,7 @@ flowchart TD
     D -- "Yes" --> E["Reviewer approves; squash-merge into main"]
     E --> F["Paste the HTML from main into Campaigner"]
     F --> I["Send"]
-    I --> J["Tag and release, close milestone and news submissions"]
+    I --> J["Close the milestone and featured news submissions"]
 ```
 
 ## Triaging GitHub issues
@@ -196,46 +196,24 @@ bypass for template or rules changes.
 ### Merging
 
 Always use **Squash and merge**. Edit the squash commit title to say what it
-is, for example `December 2026 newsletter issue (#12)`.
+is, for example `December 2026 newsletter issue (#12)`. Together with the
+committed output, this commit is the record of the issue, so a clear title
+makes it easy to find later.
 
-## After sending: tags and releases
+Before merging a newsletter issue, check that its `date` is the day it will
+actually be sent.
 
-Each sent newsletter gets a tag and a release, so there is a permanent,
-easy-to-find record of exactly what went out.
+## After sending
 
-- **Tag name:** `YYYY-MM`, for example `2026-12`
-- **Release title:** the month and the issue's headline, for example
-  `December 2026: It's the most wonderful time of the year!`
+- Close the month's milestone.
+- Comment on each featured news submission to say it was published, and
+  close it.
 
-**On GitHub:**
-
-1. Go to **Releases** → **Draft a new release**.
-2. **Choose a tag**: type `2026-12` and choose **Create new tag on publish**.
-   Target: `main`.
-3. Add the title. In the description, give the send date and a link to the
-   newsletter issue's pull request.
-4. Attach `_output/issues/2026-12-december.html` (download it from `main`).
-5. **Publish release**.
-
-**From the command line** (with the [GitHub CLI](https://cli.github.com/)):
-
-```bash
-git switch main && git pull
-gh release create 2026-12 _output/issues/2026-12-december.html \
-  --target main \
-  --title "December 2026: It's the most wonderful time of the year!" \
-  --notes "Sent on December 4, 2026. Pull request: #12"
-```
-
-Then:
-
-- close the month's milestone
-- comment on each featured news submission with a link to the release, and
-  close it
+Each sent issue is recorded by its squash-merge commit on `main` and its
+rendered HTML in `_output/`, so there's nothing else to do.
 
 **If you find a mistake after sending:** don't edit the published issue or
-its output. If it matters, add a correction to the next issue. If the release
-needs a note, edit the release description, not the files.
+its output. If it matters, add a correction to the next issue.
 
 ## Monitoring stalled issues and pull requests
 

@@ -20,9 +20,7 @@ Want to help, or share news for an upcoming issue? See
 [CONTRIBUTING.md](CONTRIBUTING.md). Maintainers' processes are in
 [MAINTAINERS.md](MAINTAINERS.md).
 
-**No installation needed:** click **Code** → **Codespaces** → **Create
-codespace on main** to open the repository in your browser with Quarto
-already set up.
+**No installation needed:** open your issue’s draft pull request, click **Code → Codespaces → Create codespace**, and you’ll get the repository in your browser, on the issue’s branch, with Quarto already set up. For anything else, create a codespace from the branch you’re working on.
 
 ## Folder layout
 
@@ -73,10 +71,10 @@ set as `image-base-url` in `_quarto.yml`. To use an image:
 
 1. Upload it to Campaigner exactly as supplied, without editing it.
 2. In the issue, write its file name exactly as it appears in Campaigner,
-   with nothing in front of it: no folder and no web address.
+   with nothing in front of it: no folder and no web address. Make sure to add alt text, captions and credits.
 
    ```markdown
-   ::: {.feature image="os_newsletter-nov2026-km_workshops.jpg" alt="..."}
+   ::: {.feature image="os_newsletter-nov2026-km_workshops.jpg" alt="..." cap="Participants at the workshop, November 2026" credits="Jane Doe, SFU Communications"}
    ```
 
 The template adds the Campaigner address when rendering, so both the preview

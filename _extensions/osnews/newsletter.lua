@@ -243,6 +243,29 @@ local function maybe_link(html, href)
   return '<a href="' .. esc(href) .. '" target="_blank" style="text-decoration:none;">' .. html .. "</a>"
 end
 
+-- An image caption with credits, from the block's cap= (or caption=) and
+-- credits= (or credit=) attributes: one small italic grey paragraph under the
+-- image, justified to the image's width. Markdown works in both, such as
+-- credits="[Jane Doe](https://example.com)".
+local function image_caption(div)
+  local cap = attr(div, "cap") or attr(div, "caption")
+  local credits = attr(div, "credits") or attr(div, "credit")
+  if not cap and not credits then return "" end
+  local text = ""
+  if cap then
+    text = cap
+    if credits and not text:match("[%.!?]$") then text = text .. "." end
+  end
+  if credits then
+    text = text .. (cap and " " or "") .. "Credit: " .. credits
+    if not text:match("[%.!?]$") then text = text .. "." end
+  end
+  local inl = pandoc.utils.blocks_to_inlines(pandoc.read(text, "markdown").blocks)
+  local inner = inlines_html(inl):gsub("<a href=", '<a style="color:' .. C.muted .. '; text-decoration:underline;" href=')
+  return '<p style="' .. css { "margin:8px 0 0 0", "font-family:" .. F.body, "font-size:12px", "line-height:17px",
+    "font-style:italic", "color:" .. C.muted, "text-align:justify" } .. '">' .. inner .. "</p>"
+end
+
 local function feature(div, width)
   width = width or INNER
   local image = attr(div, "image")
@@ -250,6 +273,7 @@ local function feature(div, width)
   if image then
     html = html .. '<tr><td style="padding:0 0 18px 0;">'
       .. maybe_link(img_tag(image, attr(div, "alt"), width, "", "nl-fluid"), attr(div, "link"))
+      .. image_caption(div)
       .. "</td></tr>"
   end
   html = html .. "<tr><td>" .. to_html(div.content) .. "</td></tr></table>"
@@ -337,7 +361,8 @@ local function two_col(div)
     local inner = ""
     local image = attr(col, "image")
     if image then
-      inner = '<div style="margin:0 0 14px 0;">' .. maybe_link(img_tag(image, attr(col, "alt"), colw, "", "nl-fluid"), attr(col, "link")) .. "</div>"
+      inner = '<div style="margin:0 0 14px 0;">' .. maybe_link(img_tag(image, attr(col, "alt"), colw, "", "nl-fluid"), attr(col, "link"))
+        .. image_caption(col) .. "</div>"
     end
     local pad = side == "l" and "padding:0 12px 0 0" or "padding:0 0 0 12px"
     return '<td class="nl-stack nl-col-' .. side .. '" width="50%" valign="top" style="width:50%; ' .. pad .. ';">' .. inner .. to_html(col.content) .. "</td>"
