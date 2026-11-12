@@ -1,5 +1,7 @@
-# On the first day of each month, creates the file for that month's
-# newsletter issue on its own branch and opens a draft pull request for it.
+# On the 5th of each month, creates the file for NEXT month's newsletter
+# issue on its own branch and opens a draft pull request for it. For example,
+# on November 5 it starts the December issue, giving time to draft it before
+# handing it over for review around the 21st.
 # Can also be run by hand: Actions > Start the monthly newsletter issue > Run workflow.
 #
 # Needs: Settings > Actions > General > Workflow permissions >
@@ -9,11 +11,11 @@ name: Start the monthly newsletter issue
 
 on:
   schedule:
-    - cron: "0 15 1 * *"   # 15:00 UTC on the 1st: 7 a.m. PST / 8 a.m. PDT
+    - cron: "0 15 5 * *"   # 15:00 UTC on the 5th: 7 a.m. PST / 8 a.m. PDT
   workflow_dispatch:
     inputs:
       month:
-        description: "Month to create, as YYYY-MM (leave empty for this month)"
+        description: "Month to create, as YYYY-MM (leave empty for next month)"
         required: false
         default: ""
 
@@ -34,7 +36,14 @@ jobs:
         id: make
         env:
           MONTH_INPUT: ${{ inputs.month }}
-        run: quarto run scripts/new-issue.ts $MONTH_INPUT
+        run: |
+          month="$MONTH_INPUT"
+          if [ -z "$month" ]; then
+            # next month, counted from the 15th so month lengths don't matter
+            month="$(date -u -d "$(date -u +%Y-%m)-15 +1 month" +%Y-%m)"
+          fi
+          echo "Creating the issue for $month"
+          quarto run scripts/new-issue.ts "$month"
 
       - name: Open a draft pull request
         if: steps.make.outputs.created == 'true'

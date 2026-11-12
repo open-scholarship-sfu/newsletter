@@ -44,11 +44,11 @@ Maintainers:
 
 | When | What happens | Who |
 |---|---|---|
-| 1st of the month | The automation creates `issues/YYYY-MM-month.qmd` on a branch and opens a draft pull request listing open news submissions | Automatic |
-| Through the month | Triage news submissions into the month's milestone | Maintainers |
+| 5th of the month before | The automation creates next month's `issues/YYYY-MM-month.qmd` on a branch and opens a draft pull request listing open news submissions (the December issue on November 5) | Automatic |
+| Through that month | Triage news submissions into the issue's milestone | Maintainers |
 | Writing | The writer works on the draft pull request's branch, rendering only that file | Writer |
 | Test | The writer pastes the branch's rendered HTML into Campaigner and sends a test email to themselves **and the reviewer** | Writer |
-| Ready | The writer marks the pull request **Ready for review** | Writer |
+| Around the 21st | The writer marks the pull request **Ready for review** | Writer |
 | Review | The reviewer checks the content, the preview and the test email they received (see [Reviewing pull requests](#reviewing-pull-requests)) | Reviewer |
 | Merge | Squash-merge the pull request into `main` | Maintainer |
 | Send | Paste the HTML **from `main`** into Campaigner and send | Maintainer |
@@ -69,9 +69,9 @@ request, test it, merge it, and only then send.
 
 ```mermaid
 flowchart TD
-    A["1st: draft pull request opened automatically"] --> B["Writer drafts the issue on its branch"]
+    A["5th of the month before: draft pull request opened automatically"] --> B["Writer drafts the issue on its branch"]
     B --> T["Writer sends a test email from the branch's HTML to themselves and the reviewer"]
-    T --> C["Writer marks it Ready for review"]
+    T --> C["Around the 21st: writer marks it Ready for review"]
     C --> D{"Content, preview and test email all pass?"}
     D -- "No" --> F2["Writer fixes on the branch"] --> T
     D -- "Yes" --> E["Reviewer approves; squash-merge into main"]
@@ -256,16 +256,17 @@ sending.
 
 ## Automation
 
-`.github/workflows/new-issue.yml` runs at 15:00 UTC on the 1st of each month
-(7 a.m. PST, 8 a.m. PDT). It runs `scripts/new-issue.ts` to create the month's
-issue file from `issues/_starter.qmd`, pushes it to a branch such as
+`.github/workflows/new-issue.yml` runs at 15:00 UTC on the 5th of each month
+(7 a.m. PST, 8 a.m. PDT). It runs `scripts/new-issue.ts` to create **next**
+month's issue file from `issues/_starter.qmd` (on November 5, the December
+issue), pushes it to a branch such as
 `issue/2027-01-january`, and opens a draft pull request listing open news
 submissions. If the file or branch already exists, it does nothing.
 
-- **Run it by hand** (for example, to start next month early): **Actions** →
-  **Start the monthly newsletter issue** → **Run workflow**, optionally with
-  a month like `2027-01`.
-- **Check it ran**: on the 1st, look for the new draft pull request. If it's
+- **Run it by hand** (for example, to start an issue early): **Actions** →
+  **Start the monthly newsletter issue** → **Run workflow**. Left empty, it
+  creates next month's issue; or give a month like `2027-01`.
+- **Check it ran**: on the 5th, look for the new draft pull request. If it's
   missing, open the workflow's latest run in **Actions** to see the error.
 - **Required setting**: Settings → Actions → General → Workflow permissions
   → **Allow GitHub Actions to create and approve pull requests**.

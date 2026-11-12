@@ -39,9 +39,9 @@ _output/issues/*.html       rendered emails, committed as the record of what was
 
 ## Making a new issue
 
-1. On the 1st of each month, a draft pull request is opened automatically
-   with that month's file, such as `issues/2026-12-december.qmd`, copied
-   from the starter. Switch to its branch and fill it in. (To create one
+1. On the 5th of each month, a draft pull request is opened automatically
+   for **next** month's issue, such as `issues/2026-12-december.qmd` on
+   November 5, copied from the starter. Switch to its branch and fill it in. (To create one
    yourself: `quarto run scripts/new-issue.ts 2026-12`.)
 2. Upload the issue's images to Campaigner's image library (see
    [Images](#images)).
