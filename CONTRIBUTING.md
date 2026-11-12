@@ -68,8 +68,9 @@ quarto render issues/2026-12-december.qmd
 
 ### Files and names
 
-- On the 1st of each month, a draft pull request is opened automatically
-  with that month's file, `issues/YYYY-MM-month.qmd`, created from
+- On the 5th of each month, a draft pull request is opened automatically
+  for **next** month's issue (for example, the December issue on November
+  5), with its file `issues/YYYY-MM-month.qmd` created from
   `issues/_starter.qmd` on a branch such as `issue/2026-12-december`. It
   also lists open news submissions. Write the issue on that branch and mark
   the pull request **Ready for review** when it's done.
