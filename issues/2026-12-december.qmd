@@ -54,7 +54,7 @@ We congratulate and appreciate all the open education champions in our community
 ::: {.col}
 ### 2nd Canadian Open Science Conference
 
-In October the Open Scholar Champions from SFU joined a wider Canadian community on the [2nd Canadian Open Science Conference](https://carn-recar.ca/2nd-canadian-open-science-conference/) in Ottawa, ON. Our community shared insights about the intersections between AI and Open Scholarship and [our strategy to map SFU's resources and infrastructure to support open scholarship practices](https://doi.org/10.5281/zenodo.24179638). Together with the TOSI Alliance, we presented results of two of our working groups: one about standards in neuro data sharing and another about [curation of training resources for neuro open science](https://doi.org/10.5281/zenodo.23481124).
+In October, SFU joined a wider Canadian community on the [2nd Canadian Open Science Conference](https://carn-recar.ca/2nd-canadian-open-science-conference/) in Ottawa, ON. Our community shared insights about the intersections between AI and Open Scholarship and [our strategy to map SFU's resources and infrastructure to support open scholarship practices](https://doi.org/10.5281/zenodo.24179638). Together with the TOSI Alliance, we presented results of two of our working groups: one about [community-led neuroimaging data sharing](https://zenodo.org/records/24201114) and another about [training resources for neuro open science](https://zenodo.org/records/24204099) ([check out all other TOSI presentations here](https://zenodo.org/communities/tosialliance)).
 
 
 :::
@@ -62,7 +62,7 @@ In October the Open Scholar Champions from SFU joined a wider Canadian community
 :::{.col}
 ### SORTEE Conference 2026
 
-We were also present at the 2026 edition of the global and online conference of the [Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology (SORTEE)](https://sortee.org/). Our community manager hosted an unconference where she provoked participants to analyse if we could use metrics and concepts from Ecology and Evolution to understand and evaluate open scholarship practices. [Materials are openly published](https://doi.org/10.5281/zenodo.24183615) and can be reused under CC-BY license.
+We were also present at the 2026 edition of the global and online conference of the [Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology (SORTEE)](https://sortee.org/). Our community manager hosted an unconference where she provoked participants to think about how and if we could use metrics and concepts from Ecology and Evolution theory to understand and evaluate open scholarship practices. [Materials are openly published](https://doi.org/10.5281/zenodo.24183615) and can be reused under CC-BY license.
 :::
 :::
 
@@ -123,7 +123,7 @@ A sentence about their work.
 
 That's it for this month! We hope you enjoy a cozy holiday break and that you feel the joy of the shared commons in your heart.
 
-We are preparing a lot of new things for the next term, including focus groups where you'll get to help us stress-test our support system for each stage of the research life cycle. We're also excited to see what our Open Scholarship Champions will do next, the events that'll come up in the summer... So much to look forward to! [Get in touch with us](mailto:open_scholarship@sfu.ca) if you want to get involved!
+We are preparing a lot of new things for the next term, including focus groups where you'll get to help us stress-test our support system for each stage of the research life cycle. We're also excited to see what our Open Scholarship Champions will do next, the events that'll come up in the summer, the wrapping up and sharing the lessons we're learning in the [Seeds to Systems](https://we-are-ols.org/seeds-to-systems/) program... So much to look forward to! [Get in touch with us](mailto:open_scholarship@sfu.ca) if you want to get involved!
 
 We deeply appreciate your engagement with our community throughout 2026 and we look forward to collaborating with you in 2027! Every click on this newsletter and every message we get tell us that we're on the right track to a more inclusive, transparent and responsible research culture at SFU.
 
