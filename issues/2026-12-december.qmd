@@ -1,58 +1,91 @@
 ---
-title: "Issue headline"
-subtitle: "One sentence on what's inside."
-date: 2026-12-01  # change to the send date
-preheader: "Inbox preview text, about 90 characters."
+title: "End-of-year reflections and looking ahead."
+# subtitle: ""
+date: 2026-12-04  # change to the send date
+preheader: "What our community have accomplished in 2026, what are our plans for 2027 and how you can get involved."
 ---
 
-Hi everyone,
+Hello, community! 🎄
 
-Short intro note.
+How it's December already? [This time last year](https://secure.campaigner.com/CSB/Public/archive.aspx?args=ODAxOTQ4MjI%3d&acc=NzcwMzg0) we were sharing some of our very first activities and the first blog post we've written with the Knowledge Mobilization Hub. One year later, we have participated in a handful of institutional, national or international events, launched our Open Scholarship Champions program, revamped our website, created a lot of resources, and, most importantly, we are more and more mindful and aware about our community needs and desires, our institutional infrastructure to support open scholarship practices, and more realistic about how to advocate for the culture change we want to see. And we are so, so happy that you're sticking around with us!
 
-Sign-off
+Happy reading!
 
-## Featured story
+## This newsletter is now open
 
-::: {.feature image="images/feature.png" alt="Describe the image" link="https://..."}
-### Story title
 
-Two or three sentences.
+#### Made in the open, with you
+
+This newsletter is now written, reviewed and published openly on GitHub, the
+same way we encourage open research. Every issue's source, its review and
+what was sent are public, and anyone can reuse the template under a CC BY 4.0
+licence.
+
+**Have news to share?** An event, a project, a funding call or a resource:
+tell us through a short online form, and we'll consider it for an upcoming
+issue. Submissions are public, so only share what can be published. You'll
+need a free GitHub account; if you'd rather not do it through GitHub, email us at
+[open_scholarship@sfu.ca](mailto:open_scholarship@sfu.ca).
+
+[Share your news](https://github.com/open-scholarship-sfu/newsletter/issues/new/choose){.button}
+[See how it's made](https://github.com/open-scholarship-sfu/newsletter){.button .secondary}
+
+
+## Celebrating Open Education at SFU
+
+::: {.feature image="https://placehold.co/600x400/000000/FFFFFF.png" alt="Describe the image" link="https://..."}
+
+On November 10th we gathered at the Burnaby Library for a lunch to celebrate those using, producing, sharing or just curious about open educational resources and practices. We heard from Evan Acetolla about engaging students in producing open educational resources, from Juan Pablo Alperin about how his experience in the back-end of open publishing shaped his career and teaching practices, from Stephanie Bertels about the open educational products that have been used to improve companies' sustainability strategies, and from Jessica Lamb about the impacts of textbooks costs on students' education and how open resources can mitigate that. The event was co-organized with the Open Education Community of Practice.
+
+We congratulate and appreciate all the open education champions in our community! Thank you! ♥️
 
 [Read the story](https://...){.button}
+
+[Join the Open Education Community of Practice](https://canvas.sfu.ca/enroll/3H3PHW)
+:::
+
+
+## 2nd Canadian Open Science Conference
+
+In October the Open Scholar Champions from SFU joined a wider Canadian community on the [2nd Canadian Open Science Conference](https://carn-recar.ca/2nd-canadian-open-science-conference/) in Ottawa, ON. Our community shared insights about the intersections between AI and Open Scholarship and [our strategy to map SFU's resources and infrastructure to support open scholarship practices](https://doi.org/10.5281/zenodo.24179638). Together with the TOSI Alliance, we presented results of two of our working groups: one about standards in neuro data sharing and another about [curation of training resources for neuro open science](https://doi.org/10.5281/zenodo.23481124).
+
+::: highlight
+#### [Submit to Metascience 2027 by December 4th](https://event.fourwaves.com/metascience2027/pages/adcdef89-0cd9-4500-84d7-ff99f5d2c297)
+[Metascience 2027](https://metascience.info/) is accepting proposals for Talks, Posters, and Panel Sessions.
+:::
+
+::: two-col
+::: {.col image="https://images-assets.nasa.gov/image/iss075e0227352/iss075e0227352~orig.jpg" alt="City lights across the eastern U.S. seen from the space station before dawn." link="https://science.nasa.gov/open-science/training/" credit="CSA/Joshua Kutryk"}
+#### NASA Open Science reopens training
+
+From the [NASA Open Science Newsletter](https://science.nasa.gov/open-science/):
+
+> NASA's Open Science Essentials ([OSE](https://stemgateway.nasa.gov/s/course-offering/a0BSJ0000049icD/open-science-essentials)) and Open Science 101 ([OS101](https://stemgateway.nasa.gov/s/course-offering/a0BSJ0000049ih3/open-science-101)) courses are currently accepting new learners.
+
+Enrolment is open until capacity is reached. This training is accepted as prerequisite to become an Open Scholarship Champion at SFU and it's free.
+:::
+
+::: {.col image="https://images.unsplash.com/photo-1613963931023-5dc59437c8a6?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="..." link="https://unsplash.com/photos/banner-reading-we-hear-you-vVSleEYPSGY" credit="Photo by Jon Tyson on Unsplash."}
+#### Help shape what we do next year 💬
+
+Workshops, lunch and learns, seminars, this newsletter: we want to know what’s working for you and what you’d like more of. The survey takes about 2 minutes, its anonymous, and every answer gets read.
+
+[Take the survey](https://app.formbricks.com/s/cmwdxv2u6gj0301ubg0tj7zxl?source=newsletter){.button}
+:::
 :::
 
 ## Upcoming events {.tinted}
 
-::: {.event date="2026-12-10" time="10:00 to 11:00 a.m." place="Online"}
-### Event title
+::: {.event date="2026-12-02" time="11:00 a.m. to 2:30 p.m." place="Burnaby, Bennett Library, Rm 7010, Research Commons"}
+### Processing and cleaning data with R
 
-One or two sentences.
+This in-person workshop for intermediate R users will show you how to import data from external files and locations, and how to prepare this data for subsequent statistical analyses. 
 
-[Register](https://...){.button .secondary}
+[Register](https://www.lib.sfu.ca/about/reach-us/news-events/workshops/calendar/2026/12){.button .secondary}
 :::
 
-## Opportunities
 
-::: highlight
-#### Deadline or call
-
-Details. **Apply by date.**
-:::
-
-::: two-col
-::: {.col image="images/card-1.png" alt="..." link="https://..."}
-#### Item one
-
-Short description. [Link](https://...)
-:::
-
-::: {.col image="images/card-2.png" alt="..." link="https://..."}
-#### Item two
-
-Short description. [Link](https://...)
-:::
-:::
-
+<!--- Maybe launch the first open scholar highlight on Radical Access?
 ## Community spotlight
 
 ::: {.spotlight image="images/spotlight.png" alt="Portrait of ..."}
@@ -62,7 +95,9 @@ Short description. [Link](https://...)
 
 A sentence about their work.
 :::
+--->
 
 ## Resources
 
-- [Resource](https://...): what it's for
+- [OS in the research life cycle](https://www.sfu.ca/research/researcher-resources/further-my-research/open-scholarship.html): we have included on our website an extensive list of resources, infrastructure information and support guides to help you navigate open scholarship practices at SFU.
+- [The Sharing Shift](https://sharingshift.okfn.org/): the Open Knowledge Foundation and [CNRS](https://cis.cnrs.fr/) have launched a project to keep the digital commons open without leaving them open to extraction by AI. Through new licences, governance models and legal strategies, it aims to give people who share data and knowledge real control over how it’s used. 
