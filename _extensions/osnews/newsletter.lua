@@ -175,10 +175,6 @@ end
 local function to_html(blocks)
   if not blocks or #blocks == 0 then return "" end
   local out = pandoc.write(pandoc.Pandoc(blocks), "html")
-  -- paragraphs inside quotes take the quote's larger type
-  out = out:gsub("(<blockquote>.-</blockquote>)", function(q)
-    return (q:gsub("<p>", '<p style="margin:0 0 12px 0; font-family:' .. F.heading .. '; font-size:19px; line-height:28px;">'))
-  end)
   return style_html(out)
 end
 
@@ -506,6 +502,19 @@ function Pandoc(doc)
     Para = Para_buttons,
     Plain = Para_buttons,
     HorizontalRule = function() return pandoc.RawBlock("html", rule()) end,
+    -- Quotes: muted grey, a little smaller than body text, with a bar on the
+    -- left. Built as a one-cell table because Outlook ignores borders on
+    -- most other elements. The bar colour is colors.quote (optional).
+    BlockQuote = function(bq)
+      local inner = pandoc.write(pandoc.Pandoc(bq.content), "html")
+      inner = inner:gsub("<p>", '<p style="' .. css { "margin:0 0 8px 0", "font-family:" .. F.body,
+        "font-size:15px", "line-height:23px", "color:" .. C.muted } .. '">')
+      inner = style_html(inner)
+      local bar = C.quote or C["on-primary-muted"] or C.line
+      return pandoc.RawBlock("html",
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 16px 0;"><tr>'
+        .. '<td style="' .. css { "border-left:3px solid " .. bar, "padding:2px 0 0 14px" } .. '">' .. inner .. "</td></tr></table>")
+    end,
     Table = function(t)
       local html = pandoc.write(pandoc.Pandoc({ t }), "html")
       return pandoc.RawBlock("html", style_html(style_html(html, TABLE_STYLES)))
