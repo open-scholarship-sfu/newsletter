@@ -154,6 +154,19 @@ Details.
 :::
 ```
 
+**Image beside text**, with the text flowing around it. `side` is `left` or
+`right` (default `right`); `width` sets the image's width in pixels (default
+200). `link`, `cap` and `credits` work as on other images. On phones, the
+image moves above the text at full width. Keep the `::: {.wrap …}` line on
+one line.
+
+```markdown
+::: {.wrap image="photo.jpg" alt="..." side="right" cap="..." credits="..."}
+#### Title
+A paragraph or more, so there's enough text to flow around the image.
+:::
+```
+
 **Two columns** that stack on phones. Each column may have an image.
 
 ```markdown
