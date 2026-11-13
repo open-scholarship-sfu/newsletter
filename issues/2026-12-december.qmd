@@ -7,9 +7,13 @@ preheader: "What our community have accomplished in 2026, what are our plans for
 
 Hello, community! 🎄
 
-How it's December already? [This time last year](https://secure.campaigner.com/CSB/Public/archive.aspx?args=ODAxOTQ4MjI%3d&acc=NzcwMzg0) we were sharing some of our very first activities and the first blog post we've written with the Knowledge Mobilization Hub. One year later, we have participated in a handful of institutional, national or international events, launched our Open Scholarship Champions program, revamped our website, created a lot of resources, and, most importantly, we are more and more mindful and aware about our community needs and desires, our institutional infrastructure to support open scholarship practices, and more realistic about how to advocate for the culture change we want to see. And we are so, so happy that you're sticking around with us!
+How it's December already? [This time last year](https://secure.campaigner.com/CSB/Public/archive.aspx?args=ODAxOTQ4MjI%3d&acc=NzcwMzg0) we were sharing some of our very first activities and the first blog post we've written with the Knowledge Mobilization Hub. One year later, we have participated in a handful of institutional, national or international events, launched our Open Scholarship Champions program, revamped our website, created a lot of resources, and, most importantly, we are more and more mindful and aware about our community needs and desires, our institutional infrastructure to support open scholarship practices, and learning together how to advocate for the culture change we want to see. And we are so, so happy that you're sticking around with us!
 
 Happy reading!
+
+::: {.feature image="os-glass_vase-dec-2026.jpg" alt="A large glass vase on a cracked gray hardstone ledge displays a vibrant profusion of cultivated and field flowers, as well as the branches of stone fruit and berries – in all about twenty species of flowers, six different fruits, and sixteen distinct insects are represented." link="https://www.getty.edu/art/collection/object/29Y70F" caption="Jan Davidsz. de Heem (Dutch, 1606 - 1684) Glass Vase with Flowers and Fruit, about 1673–1674 Oil on canvas Unframed: 87.3 × 67.2 cm (34 3/8 × 26 7/16 in.) The J. Paul Getty Museum, Los Angeles, 2026.10. CC0."}
+
+:::
 
 ## This newsletter is now open
 
@@ -44,10 +48,23 @@ We congratulate and appreciate all the open education champions in our community
 [Join the Open Education Community of Practice](https://canvas.sfu.ca/enroll/3H3PHW)
 :::
 
+## We've been busy!
 
-## 2nd Canadian Open Science Conference
+::: two-col
+::: {.col}
+### 2nd Canadian Open Science Conference
 
 In October the Open Scholar Champions from SFU joined a wider Canadian community on the [2nd Canadian Open Science Conference](https://carn-recar.ca/2nd-canadian-open-science-conference/) in Ottawa, ON. Our community shared insights about the intersections between AI and Open Scholarship and [our strategy to map SFU's resources and infrastructure to support open scholarship practices](https://doi.org/10.5281/zenodo.24179638). Together with the TOSI Alliance, we presented results of two of our working groups: one about standards in neuro data sharing and another about [curation of training resources for neuro open science](https://doi.org/10.5281/zenodo.23481124).
+
+
+:::
+
+:::{.col}
+### SORTEE Conference 2026
+
+We were also present at the 2026 edition of the global and online conference of the [Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology (SORTEE)](https://sortee.org/). Our community manager hosted an unconference where she provoked participants to analyse if we could use metrics and concepts from Ecology and Evolution to understand and evaluate open scholarship practices. [Materials are openly published](https://doi.org/10.5281/zenodo.24183615) and can be reused under CC-BY license.
+:::
+:::
 
 ::: highlight
 #### [Submit to Metascience 2027 by December 4th](https://event.fourwaves.com/metascience2027/pages/adcdef89-0cd9-4500-84d7-ff99f5d2c297)
@@ -101,3 +118,13 @@ A sentence about their work.
 
 - [OS in the research life cycle](https://www.sfu.ca/research/researcher-resources/further-my-research/open-scholarship.html): we have included on our website an extensive list of resources, infrastructure information and support guides to help you navigate open scholarship practices at SFU.
 - [The Sharing Shift](https://sharingshift.okfn.org/): the Open Knowledge Foundation and [CNRS](https://cis.cnrs.fr/) have launched a project to keep the digital commons open without leaving them open to extraction by AI. Through new licences, governance models and legal strategies, it aims to give people who share data and knowledge real control over how it’s used. 
+
+## See you in 2027! ❄️
+
+That's it for this month! We hope you enjoy a cozy holiday break and that you feel the joy of the shared commons in your heart.
+
+We are preparing a lot of new things for the next term, including focus groups where you'll get to help us stress-test our support system for each stage of the research life cycle. We're also excited to see what our Open Scholarship Champions will do next, the events that'll come up in the summer... So much to look forward to! [Get in touch with us](mailto:open_scholarship@sfu.ca) if you want to get involved!
+
+We deeply appreciate your engagement with our community throughout 2026 and we look forward to collaborating with you in 2027! Every click on this newsletter and every message we get tell us that we're on the right track to a more inclusive, transparent and responsible research culture at SFU.
+
+See you in January!
