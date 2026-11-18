@@ -1,5 +1,5 @@
 ---
-title: "End-of-year reflections and looking ahead."
+title: "End-of-year reflections and looking ahead"
 # subtitle: ""
 date: 2026-12-04  # change to the send date
 preheader: "What our community have accomplished in 2026, what are our plans for 2027 and how you can get involved."
@@ -7,7 +7,7 @@ preheader: "What our community have accomplished in 2026, what are our plans for
 
 Hello, community! 🎄
 
-How it's December already? [This time last year](https://secure.campaigner.com/CSB/Public/archive.aspx?args=ODAxOTQ4MjI%3d&acc=NzcwMzg0) we were sharing some of our very first activities and the first blog post we've written with the Knowledge Mobilization Hub. One year later, we have participated in a handful of institutional, national or international events, launched our Open Scholarship Champions program, revamped our website, created a lot of resources, and, most importantly, we are more and more mindful and aware about our community needs and desires, our institutional infrastructure to support open scholarship practices, and learning together how to advocate for the culture change we want to see. And we are so, so happy that you're sticking around with us!
+How is it December already? [This time last year](https://secure.campaigner.com/CSB/Public/archive.aspx?args=ODAxOTQ4MjI%3d&acc=NzcwMzg0) we were sharing some of our very first activities and the first blog post we wrote with the Knowledge Mobilization Hub. One year later, we have participated in a handful of institutional, national, and international events, launched our Open Scholarship Champions program, revamped our website, and created a lot of resources. Most importantly, we are becoming more mindful of our community’s needs and desires and of the institutional infrastructure that supports open scholarship practices, and we are learning together how to advocate for the culture change we want to see. And we are so, so happy that you’re sticking with us!
 
 Happy reading!
 
@@ -37,7 +37,7 @@ need a free GitHub account; if you'd rather not do it through GitHub, email us a
 
 ## Celebrating Open Education at SFU
 
-::: {.feature image="https://placehold.co/600x400/000000/FFFFFF.png" alt="Describe the image" link="https://..."}
+::: {.wrap image="https://placehold.co/600x400/000000/FFFFFF.png" alt="Describe the image" link="https://..." side="right"}
 
 On November 10th we gathered at the Burnaby Library for a lunch to celebrate those using, producing, sharing or just curious about open educational resources and practices. We heard from Evan Acetolla about engaging students in producing open educational resources, from Juan Pablo Alperin about how his experience in the back-end of open publishing shaped his career and teaching practices, from Stephanie Bertels about the open educational products that have been used to improve companies' sustainability strategies, and from Jessica Lamb about the impacts of textbooks costs on students' education and how open resources can mitigate that. The event was co-organized with the Open Education Community of Practice.
 
@@ -65,6 +65,12 @@ In October, SFU joined a wider Canadian community on the [2nd Canadian Open Scie
 We were also present at the 2026 edition of the global and online conference of the [Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology (SORTEE)](https://sortee.org/). Our community manager hosted an unconference where she provoked participants to think about how and if we could use metrics and concepts from Ecology and Evolution theory to understand and evaluate open scholarship practices. [Materials are openly published](https://doi.org/10.5281/zenodo.24183615) and can be reused under CC-BY license.
 :::
 :::
+
+### SFU OS initiative shares insights at TOSI Open Science In Action Symposium
+
+Kelly Shen, project lead and INN director of operations, was a part of a panel titled "Building an Open Science Ecosystem: What Institutions Need Next" where she shared insights on how neuroscience institutions can create conditions for data sharing so that open science workflows are normalized and routine. Discussions touched on digital infrastructure, data governance, and federated solutions to data sharing.
+
+[The event](https://event.fourwaves.com/osia2026) happened on November 2nd, in Montreal, QC.
 
 ::: highlight
 #### [Submit to Metascience 2027 by December 4th](https://event.fourwaves.com/metascience2027/pages/adcdef89-0cd9-4500-84d7-ff99f5d2c297)
@@ -117,7 +123,9 @@ A sentence about their work.
 ## Resources
 
 - [OS in the research life cycle](https://www.sfu.ca/research/researcher-resources/further-my-research/open-scholarship.html): we have included on our website an extensive list of resources, infrastructure information and support guides to help you navigate open scholarship practices at SFU.
-- [The Sharing Shift](https://sharingshift.okfn.org/): the Open Knowledge Foundation and [CNRS](https://cis.cnrs.fr/) have launched a project to keep the digital commons open without leaving them open to extraction by AI. Through new licences, governance models and legal strategies, it aims to give people who share data and knowledge real control over how it’s used. 
+- [The Sharing Shift](https://sharingshift.okfn.org/): the Open Knowledge Foundation and [CNRS](https://cis.cnrs.fr/) have launched a project to keep the digital commons open without leaving them open to extraction by AI. Through new licences, governance models and legal strategies, it aims to give people who share data and knowledge real control over how it’s used.
+- [Canada Meta-Moment report 2026](https://meta-moment.researchonresearch.org/countries/canada#evidence): A new RoRI Meta-Moment case study from CIHR and SSHRC finds Canadian research-on-research is active and well connected internationally, but still runs on informal coordination and fragmented data, with no national strategy. 
+- [Creative Commons + UC Berkeley AI Sentiment Survey](https://berkeley.qualtrics.com/jfe/form/SV_2c16kTIHnhvENRY): Do you share your research or data under Creative Commons licenses? Creative Commons and UC Berkeley researchers want to hear how open researchers feel about AI training on openly licensed work, web scraping, and whether CC licenses still fit an AI-driven world. The confidential survey takes about 10 minutes.
 
 ## See you in 2027! ❄️
 
