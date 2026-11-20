@@ -175,10 +175,6 @@ end
 local function to_html(blocks)
   if not blocks or #blocks == 0 then return "" end
   local out = pandoc.write(pandoc.Pandoc(blocks), "html")
-  -- paragraphs inside quotes take the quote's larger type
-  out = out:gsub("(<blockquote>.-</blockquote>)", function(q)
-    return (q:gsub("<p>", '<p style="margin:0 0 12px 0; font-family:' .. F.heading .. '; font-size:19px; line-height:28px;">'))
-  end)
   return style_html(out)
 end
 
@@ -264,6 +260,31 @@ local function image_caption(div)
   local inner = inlines_html(inl):gsub("<a href=", '<a style="color:' .. C.muted .. '; text-decoration:underline;" href=')
   return '<p style="' .. css { "margin:8px 0 0 0", "font-family:" .. F.body, "font-size:12px", "line-height:17px",
     "font-style:italic", "color:" .. C.muted, "text-align:justify" } .. '">' .. inner .. "</p>"
+end
+
+-- An image beside the text, with the text flowing around it:
+--   ::: {.wrap image="..." alt="..." side="right" width="200" link="..." cap="..." credits="..."}
+-- The image sits in a small table aligned left or right, which every email
+-- app wraps text around (Outlook ignores CSS floats). On phones it moves
+-- above the text at full width (see .nl-wrap in template.html).
+local function wrap(div)
+  local image = attr(div, "image")
+  if not image then return nil end
+  local side = (attr(div, "side") or "right"):lower()
+  if side ~= "left" then side = "right" end
+  local width = tonumber(attr(div, "width") or "") or 200
+  if width > INNER then width = INNER end
+  -- the gap between image and text is padding inside the cell, which
+  -- Outlook respects (it ignores margins on tables)
+  local gap = side == "right" and "padding:4px 0 10px 20px" or "padding:4px 20px 10px 0"
+  local box = '<table role="presentation" class="nl-wrap" align="' .. side .. '" width="' .. (width + 20) .. '"'
+    .. ' cellpadding="0" cellspacing="0" border="0"><tr><td class="nl-wrap-cell" valign="top" style="' .. gap .. ';">'
+    .. maybe_link(img_tag(image, attr(div, "alt"), width, "", "nl-fluid"), attr(div, "link"))
+    .. image_caption(div)
+    .. "</td></tr></table>"
+  -- the block ends below the image, even when the text is short
+  local clear = '<div style="clear:both; font-size:0; line-height:0;">&nbsp;</div>'
+  return pandoc.RawBlock("html", box .. to_html(div.content) .. clear)
 end
 
 local function feature(div, width)
@@ -506,6 +527,19 @@ function Pandoc(doc)
     Para = Para_buttons,
     Plain = Para_buttons,
     HorizontalRule = function() return pandoc.RawBlock("html", rule()) end,
+    -- Quotes: muted grey, a little smaller than body text, with a bar on the
+    -- left. Built as a one-cell table because Outlook ignores borders on
+    -- most other elements. The bar colour is colors.quote (optional).
+    BlockQuote = function(bq)
+      local inner = pandoc.write(pandoc.Pandoc(bq.content), "html")
+      inner = inner:gsub("<p>", '<p style="' .. css { "margin:0 0 8px 0", "font-family:" .. F.body,
+        "font-size:15px", "line-height:23px", "color:" .. C.muted } .. '">')
+      inner = style_html(inner)
+      local bar = C.quote or C["on-primary-muted"] or C.line
+      return pandoc.RawBlock("html",
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 16px 0;"><tr>'
+        .. '<td style="' .. css { "border-left:3px solid " .. bar, "padding:2px 0 0 14px" } .. '">' .. inner .. "</td></tr></table>")
+    end,
     Table = function(t)
       local html = pandoc.write(pandoc.Pandoc({ t }), "html")
       return pandoc.RawBlock("html", style_html(style_html(html, TABLE_STYLES)))
@@ -516,6 +550,7 @@ function Pandoc(doc)
   doc = doc:walk {
     Div = function(div)
       if div.classes:includes("feature") then return feature(div) end
+      if div.classes:includes("wrap") then return wrap(div) end
       if div.classes:includes("event") then return event(div) end
       if div.classes:includes("spotlight") then return spotlight(div) end
       if div.classes:includes("highlight") then return highlight(div) end
