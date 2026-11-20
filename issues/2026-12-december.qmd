@@ -48,13 +48,26 @@ We congratulate and appreciate all the open education champions in our community
 [Join the Open Education Community of Practice](https://canvas.sfu.ca/enroll/3H3PHW)
 :::
 
+## Rediscovering the forgotten heatwave of 1941
+
+A new open-access study from the [School of Environmental Science](https://www.sfu.ca/evsc.html) compares the 2021 heat dome with its little-known 1941 twin, combining 80-year-old newspaper reports with public datasets from Environment and Climate Change Canada, Fisheries and Oceans Canada and Statistics Canada. All code is openly shared on Zenodo, so anyone can reproduce the analysis. The study was covered in the national and international press, contributing to the debate around preparedness for environmental phenomena like these. This is a great example of openness percolating many stages of the research life cycle: it uses open data, it produces and shares open code and it [communicates with the media](https://www.cbc.ca/news/canada/british-columbia/b-c-heat-dome-historical-research-death-toll-9.7421667). Congratulations to the team!
+
+[Read the study](https://www.nature.com/articles/s43247-026-04055-0){.button}
+[Read the story on SFU News](https://www.sfu.ca/sfunews/stories/2026/11/Old-man-humidity-in-league-with-heat-demons-How-historic-BC-heat-wave-offer-lessons.html?cmp=1){.button .secondary}
+
 ## We've been busy!
 
-::: two-col
-::: {.col}
+::: {.wrap image="os_newsletter-dec-2026-tosi_at_cosc2026.jpg" caption="TOSI Alliance members at the 2nd Canadian Open Science Conference in Ottawa, ON." credit="Cleo Hendrickson, 2026." side="left"}
 ### 2nd Canadian Open Science Conference
 
 In October, SFU joined a wider Canadian community on the [2nd Canadian Open Science Conference](https://carn-recar.ca/2nd-canadian-open-science-conference/) in Ottawa, ON. Our community shared insights about the intersections between AI and Open Scholarship and [our strategy to map SFU's resources and infrastructure to support open scholarship practices](https://doi.org/10.5281/zenodo.24179638). Together with the TOSI Alliance, we presented results of two of our working groups: one about [community-led neuroimaging data sharing](https://zenodo.org/records/24201114) and another about [training resources for neuro open science](https://zenodo.org/records/24204099) ([check out all other TOSI presentations here](https://zenodo.org/communities/tosialliance)).
+:::
+
+::: two-col
+::: {.col}
+### SFU OS Initiative shares insights at TOSI Open Science In Action Symposium
+
+Kelly Shen, project lead and INN director of operations, was a part of a panel titled "Building an Open Science Ecosystem: What Institutions Need Next" where she shared insights on how neuroscience institutions can create conditions for data sharing so that open science workflows are normalized and routine. Discussions touched on digital infrastructure, data governance, and federated solutions to data sharing. [The event](https://event.fourwaves.com/osia2026) happened on November 2nd, in Montreal, QC.
 
 
 :::
@@ -62,20 +75,18 @@ In October, SFU joined a wider Canadian community on the [2nd Canadian Open Scie
 :::{.col}
 ### SORTEE Conference 2026
 
-We were also present at the 2026 edition of the global and online conference of the [Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology (SORTEE)](https://sortee.org/). Our community manager hosted an unconference where she provoked participants to think about how and if we could use metrics and concepts from Ecology and Evolution theory to understand and evaluate open scholarship practices. [Materials are openly published](https://doi.org/10.5281/zenodo.24183615) and can be reused under CC-BY license.
+We were also present at the 2026 edition of the global and online conference of the [Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology (SORTEE)](https://sortee.org/). Our community manager Gracielle Higino hosted an unconference where she provoked participants to think about how and if we could use metrics and concepts from Ecology and Evolution theory to understand and evaluate open scholarship practices. [Materials are openly published](https://doi.org/10.5281/zenodo.24183615) and can be reused under CC-BY license.
 :::
 :::
 
-### SFU OS initiative shares insights at TOSI Open Science In Action Symposium
-
-Kelly Shen, project lead and INN director of operations, was a part of a panel titled "Building an Open Science Ecosystem: What Institutions Need Next" where she shared insights on how neuroscience institutions can create conditions for data sharing so that open science workflows are normalized and routine. Discussions touched on digital infrastructure, data governance, and federated solutions to data sharing.
-
-[The event](https://event.fourwaves.com/osia2026) happened on November 2nd, in Montreal, QC.
 
 ::: highlight
-#### [Submit to Metascience 2027 by December 4th](https://event.fourwaves.com/metascience2027/pages/adcdef89-0cd9-4500-84d7-ff99f5d2c297)
-[Metascience 2027](https://metascience.info/) is accepting proposals for Talks, Posters, and Panel Sessions.
+### Open calls for proposals
+* [**Submit to Metascience 2027 by December 4th**](https://event.fourwaves.com/metascience2027/pages/adcdef89-0cd9-4500-84d7-ff99f5d2c297): [Metascience 2027](https://metascience.info/) is accepting proposals for Talks, Posters, and Panel Sessions.
+
+* [**Submit to FORCE2027 by December 27th**](https://forms.gle/YAsh5jmTGFYjmZtN8): The [next edition in Mexico City](https://mx.force11.org/) will host sessions that explore the future of research communication in the age of AI. 
 :::
+
 
 ::: two-col
 ::: {.col image="https://images-assets.nasa.gov/image/iss075e0227352/iss075e0227352~orig.jpg" alt="City lights across the eastern U.S. seen from the space station before dawn." link="https://science.nasa.gov/open-science/training/" credit="CSA/Joshua Kutryk"}
@@ -107,6 +118,13 @@ This in-person workshop for intermediate R users will show you how to import dat
 [Register](https://www.lib.sfu.ca/about/reach-us/news-events/workshops/calendar/2026/12){.button .secondary}
 :::
 
+::: {.event date="2026-12-08" time="9 a.m. PCT" place="Online"}
+### VIT^L Framework and Convergence Community Discussion
+
+Incentivizing Collaborative and Open Research (ICOR) is hosting a webinar on VIT^L, a new framework for verifiable, reusable research, and on how it will be developed further at the [Convergence](https://www.convergescience.org/) conference in Montreal next June. Everyone interested in open science and how we improve the way we share research is welcome.
+
+[Register](https://incentivizingopen.org/2026/11/vitl-framework-and-convergence-community-discussion/){.button .secondary}
+:::
 
 <!--- Maybe launch the first open scholar highlight on Radical Access?
 ## Community spotlight
